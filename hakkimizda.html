@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(45deg, #fbbf24, #000000);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #fbbf24;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .about-icon {
+            background: linear-gradient(45deg, #3b82f6, #1e40af);
+            color: white;
+            border-radius: 50%;
+            padding: 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero-section text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-3xl font-bold flex items-center">
+                <svg class="w-10 h-10 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <img src="images/logo.png" alt="" width="100px" height="100px">
+                </svg>
+                Rüyam Sünnet
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+                    <!-- <li><a href="#" class="nav-link">Ürünler</a></li> -->
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="space-y-12">
+            <div class="text-center mb-16">
+                <h1 class="text-5xl font-bold text-yellow-500 mb-6">Hakkımızda</h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Rüyam Sünnet, çocukların en özel günlerinde onların mutluluğuna ortak olmak için kurulmuş bir işletmedir.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4">
+                            <div class="about-icon">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-yellow-500">Misyonumuz</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Her çocuğun sünnet gününü unutulmaz kılacak, kaliteli ve şık kıyafetler sunmak.
+                        </p>
+                    </div>
+                    
+                    <div class="space-y-6 mt-8">
+                        <div class="flex items-center space-x-4">
+                            <div class="about-icon">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.768-.231-1.477-.634-2.021M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.768.231-1.477.634-2.021m0 0a3 3 0 114.634-2.979m-4.634 2.979c.346.63.534 1.363.634 2.021m4.634-2.021c-.346.63-.534 1.363-.634 2.021M10 12a3 3 0 003 3 3 3 0 003-3 3 3 0 00-6 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-semibold text-yellow-500">Vizyonumuz</h3>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed">
+                            Türkiye'nin her yerinde aileler tarafından güvenilen, kalite ve şıklığı bir arada sunan bir marka olmak.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <img src="images/i5.jpg" alt="Rüyam Sünnet Ekibi" class="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <p class="text-lg">© 2024 Rüyam Sünnet. Tüm hakları saklıdır.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="gizlilikpol.html" class="hover:text-yellow-400 transition">Gizlilik Politikası</a>
+                <a href="kullanimkos.html" class="hover:text-yellow-400 transition">Kullanım Koşulları</a>
+                <a href="iletisim.html" class="hover:text-yellow-400 transition">İletişim</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

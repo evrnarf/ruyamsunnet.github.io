@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rüyam Sünnet - Sünnet Kıyafetleri</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .hero-section {
+            background: linear-gradient(45deg, #fbbf24, #000000);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+
+        .product-card {
+            transition: all 0.3s ease;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .product-card img {
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .nav-link {
+            position: relative;
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #fbbf24;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .btn-custom {
+            background: linear-gradient(to right, #3b82f6, #1e40af);
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-custom:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(0,0,0,0.25);
+        }
+        .container mx-auto px-4 flex justify-between items-center{
+            background-color: #FFD700;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="hero-section text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <div class="text-3xl font-bold flex items-center">
+                <svg class="w-10 h-10 mr-3" fill="currentColor" viewBox="0 0 20 20">
+                    <img src="images/logo.png" alt="" width="100px" height="100px">
+                </svg>
+                Rüyam Sünnet
+            </div>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+                    <!-- <li><a href="#" class="nav-link">Ürünler</a></li> -->
+                    <li><a href="hakkimizda.html" class="nav-link">Hakkımızda</a></li>
+                    <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <section class="grid md:grid-cols-2 gap-12 items-center mb-20">
+            <div class="space-y-6">
+                <h1 class="text-5xl font-bold text-yellow-500 leading-tight">
+                    Özel Günler İçin Özel Kıyafetler
+                </h1>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Rüyam Sünnet olarak, çocuklarınızın en mutlu gününde şık ve özel hissetmeleri için birbirinden güzel sünnet kıyafetleri hazırlıyoruz.
+                </p>
+                <!-- <a href="#" class="btn-custom text-white px-8 py-4 rounded-full inline-block">
+                    Ürünlerimizi İnceleyin
+                </a> -->
+            </div>
+            <div>
+                <img src="images/i1.jpg" alt="Sünnet Kıyafeti" class="w-full rounded-3xl shadow-2xl transform rotate-3 hover:rotate-0 transition-transform duration-300" id="f1">
+            </div>
+        </section>
+
+        <section>
+            <h2 class="text-4xl font-bold text-center mb-16 text-yellow-400">Ürün Kategorilerimiz</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="product-card p-6">
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="images/i3.jpg" alt="Takım Elbise" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-4 text-yellow-400">Takım Elbiseler</h3>
+                        <p class="text-gray-600">Şık ve zarif sünnet takım elbiseleri</p>
+                    </div>
+                </div>
+                <div class="product-card p-6">
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="images/i2.jpg" alt="Gömlek" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-4 text-yellow-400">Gömlekler</h3>
+                        <p class="text-gray-600">Kaliteli ve rahat sünnet gömlekleri</p>
+                    </div>
+                </div>
+                <div class="product-card p-6">
+                    <div class="mb-6 overflow-hidden rounded-xl">
+                        <img src="images/i4.webp" alt="Aksesuar" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-semibold mb-4 text-yellow-400">Aksesuarlar</h3>
+                        <p class="text-gray-600">Tamamlayıcı sünnet aksesuarları</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="mb-8">
+                <p class="text-lg">© 2024 Rüyam Sünnet. Tüm hakları saklıdır.</p>
+            </div>
+            <div class="flex justify-center space-x-6">
+                <a href="gizlilikpol.html" class="hover:text-yellow-400 transition">Gizlilik Politikası</a>
+                <a href="kullanimkos.html" class="hover:text-yellow-400 transition">Kullanım Koşulları</a>
+                <a href="iletisim.html" class="hover:text-yellow-400 transition">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        
+    </script>
+</body>
+</html>
